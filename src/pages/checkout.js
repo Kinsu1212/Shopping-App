@@ -85,7 +85,7 @@ export default function Home() {
         </div>
         <a
           href="/payment"
-          className=" bg-yellow-400 text-white p-[10px] rounded mt-[20px]"
+          className=" bg-[#00FFFF] text-white p-[10px] rounded mt-[20px]"
         >
           proceed to Payment
         </a>

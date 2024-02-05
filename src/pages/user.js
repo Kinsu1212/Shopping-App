@@ -65,7 +65,7 @@ export default function Home() {
           </div>
         </div>
         <button
-          className=" bg-yellow-400 text-slate-950 p-[10px] rounded mt-[20px]"
+          className=" bg-[#00FFFF] text-slate-950 p-[10px] rounded mt-[20px]"
           onClick={() => {
             alert("Details Saved Successfully !! 😊");
             saveDetails();

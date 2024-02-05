@@ -3,7 +3,7 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className="flex flex-col justify-center items-center gap-[20px] bg-yellow-400 font-[Arial]">
+    <div className="flex flex-col justify-center items-center gap-[20px] bg-[#00FFFF] font-[Arial]">
       <a href="/" className="text-[26px] rounded p-[5px] bg-white w-[120px] flex justify-center">
         Home
       </a>

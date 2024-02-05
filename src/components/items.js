@@ -43,7 +43,7 @@ function Items(items) {
   };
 
   return (
-    <div className=" w-[180px] rounded overflow-hidden shadow-lg bg-yellow-400 min-h-[455px]">
+    <div className=" w-[180px] rounded overflow-hidden shadow-lg bg-[#00FFFF] min-h-[455px]">
       <Image
         className="w-full"
         src={items.items.image}

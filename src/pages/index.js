@@ -289,7 +289,7 @@ export default function Home() {
 
   return (
     <div className="flex">
-      <div className="min-w-[175px] flex items-center justify-center bg-yellow-400">
+      <div className="min-w-[175px] flex items-center justify-center bg-[#00FFFF]">
         <Sidebar />
       </div>
       <div className="p-[20px] w-full flex flex-col justify-center items-center">
@@ -392,7 +392,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[200px] bg-yellow-400 flex flex-col justify-center p-[10px] gap-[5px]">
+      <div className="w-[200px] bg-[#00FFFF] flex flex-col justify-center p-[10px] gap-[5px]">
         <div className="flex justify-center gap-[5px]">
           <div className="text-[20px] w-max rounded p-[5px] text-slate-950 ">Your Cart Items</div>
           {/* <div className="text-[30px]">{totalCount}</div> */}

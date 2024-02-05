@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 export default function Payment() {
   const router = useRouter();
   return (
-    <div className="flex flex-col w-[1560px] h-[900px] bg-yellow-400 justify-center items-center">
+    <div className="flex flex-col w-[1560px] h-[900px] bg-[#00FFFF] justify-center items-center">
       <h1 className=" text-slate-50">Payment Successfully Done</h1>
       <h1>Thank you for shopping</h1>
       <button
