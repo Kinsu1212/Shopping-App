@@ -8,7 +8,7 @@ function Sidebar() {
         Home
       </a>
       <a href="/user" className="text-[26px] rounded p-[5px] bg-white w-[120px] flex justify-center">
-        User
+        User info
       </a>
       <a href="/checkout" className="text-[26px] rounded p-[5px] w-[120px] bg-white flex justify-center">
         Checkout
