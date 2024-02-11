@@ -43,7 +43,7 @@ function Items(items) {
   };
 
   return (
-    <div className=" w-[180px] rounded overflow-hidden shadow-lg bg-[#00FFFF] min-h-[455px]">
+    <div className="w-[180px] rounded overflow-hidden shadow-lg bg-[#F2EDE6] min-h-[455px]">
       <Image
         className="w-full"
         src={items.items.image}
@@ -77,11 +77,10 @@ function Items(items) {
       </div>
       <div className="flex justify-center items-center gap-[10px] pb-[20px]">
         <button
-          className={`inline-block bg-slate-50 rounded-full px-3 py-1 text-[10px] font-semibold text-slate-950 ${
-            count === 0
+          className={`inline-block bg-slate-50 rounded-full px-3 py-1 text-[10px] font-semibold text-slate-950 ${count === 0
               ? "opacity-50 cursor-not-allowed pointer-events-none"
               : ""
-          }`}
+            }`}
           onClick={() => {
             setCount(count - 1);
           }}
@@ -99,22 +98,21 @@ function Items(items) {
         </button>
         <button
           className={`inline-block bg-green-700 rounded px-3 py-1 text-[10px] font-semibold text-slate-50 
-          ${
-            count === 0
+          ${count === 0
               ? "opacity-50 cursor-not-allowed pointer-events-none"
               : ""
-          }`}
+            }`}
           onClick={() => {
             addToCart(items.items.name, count, items.items.price);
+            alert(`${count > 1 ? "Items Added" : "Item Added"}`)
           }}
         >
           Add to Cart
         </button>
       </div>
       <button
-        className={`inline-block pb-[10px] w-full justify-center items-center bg-red-500 rounded px-3 py-1 text-[10px] font-semibold text-slate-50  ${
-          count === 0 ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
-        }`}
+        className={`inline-block pb-[10px] w-full justify-center items-center bg-red-500 rounded px-3 py-1 text-[10px] font-semibold text-slate-50  ${count === 0 ? "opacity-50 cursor-not-allowed pointer-events-none" : ""
+          }`}
         onClick={() => {
           const itemToRemove = items.items.name;
           removeFromCart(itemToRemove);

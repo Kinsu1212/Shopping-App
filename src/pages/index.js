@@ -289,16 +289,16 @@ export default function Home() {
 
   return (
     <div className="flex">
-      <div className="min-w-[175px] flex items-center justify-center bg-[#00FFFF]">
+      <div className="min-w-[175px] flex items-center justify-center bg-[#4E1B53]">
         <Sidebar />
       </div>
-      <div className="p-[20px] w-full flex flex-col justify-center items-center">
+      <div className="p-[20px] w-full flex flex-col justify-center items-center bg-[#4E1B53CC]">
         <Topbar />
-        <div className="flex w-full items-center justify-center p-[20px] text-[30px]">
+        <div className="flex w-full items-center justify-center p-[20px] text-[30px] text-white opacity-[0.6]">
           Items
         </div>
         <input
-          className="w-full rounded-md border-[5px] border-solid border-yellow-400 m-[20px] p-[10px]"
+          className="w-full rounded-md border-[1px] border-solid m-[20px] p-[10px]"
           type="text"
           onChange={searchChanged}
           placeholder="Search "
@@ -392,18 +392,18 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[200px] bg-[#00FFFF] flex flex-col justify-center p-[10px] gap-[5px]">
+      <div className="w-[260px] bg-[#4E1B53] flex flex-col justify-center p-[10px] gap-[5px]">
         <div className="flex justify-center gap-[5px]">
-          <div className="text-[20px] w-max rounded p-[5px] text-slate-950 ">Your Cart Items</div>
+          <div className="text-[20px] w-max rounded p-[5px] text-white">Your Cart Items</div>
           {/* <div className="text-[30px]">{totalCount}</div> */}
         </div>
         <ul>
           {cartItems.map((item, index) => (
-            <li key={index}>{item.itemName + " - " + item.count}</li>
+            <li key={index} className="text-white opacity-[0.4]">{item.itemName + " - " + item.count}</li>
           ))}
         </ul>
         
-      {cartItems.length > 0 && (  <a href="/checkout" className="text-[25px] p-[5px] rounded text-yellow-400 flex justify-center bg-slate-50">
+        {cartItems.length > 0 && (<a href="/checkout" className="text-[25px] p-[5px] rounded text-white flex justify-center bg-[#4E1B53]">
         Checkout
       </a>          
        )}
