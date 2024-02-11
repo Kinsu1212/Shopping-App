@@ -3,14 +3,14 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className="flex flex-col justify-center items-center gap-[20px] bg-[#00FFFF] font-[Arial]">
-      <a href="/" className="text-[26px] rounded p-[5px] bg-white w-[120px] flex justify-center">
+    <div className="flex flex-col justify-center items-center gap-[20px] bg-[#4E1B53] font-[Arial]">
+      <a href="/" className="text-[26px] rounded text-white p-[5px] bg-[#4E1B53] w-[120px] flex justify-center">
         Home
       </a>
-      <a href="/user" className="text-[26px] rounded p-[5px] bg-white w-[120px] flex justify-center">
-        User info
+      <a href="/user" className="text-[26px] text-white rounded p-[5px] bg-[#4E1B53] w-[120px] flex justify-center">
+        User
       </a>
-      <a href="/checkout" className="text-[26px] rounded p-[5px] w-[120px] bg-white flex justify-center">
+      <a href="/checkout" className="text-[26px] text-white rounded p-[5px] w-[120px] bg-[#4E1B53] flex justify-center">
         Checkout
       </a>
     </div>
